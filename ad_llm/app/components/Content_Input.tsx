@@ -90,7 +90,7 @@ export default function Content_Input({ onDslChange, onLoadingChange }: Props) {
                 </div>
 
                 {loading ? (
-                    <p className="w-full h-full  rounded-xl p-3 text-sm whitespace-pre-wrap overflow-auto">Extracting...</p>
+                    <p className="w-full h-full text-gray-400 rounded-xl p-3 text-sm whitespace-pre-wrap overflow-auto">Extracting...</p>
                 ) : extractionResult ? (
                     <pre className="w-full h-full  rounded-xl p-3 text-sm whitespace-pre-wrap overflow-auto">
                     {extractionResult}

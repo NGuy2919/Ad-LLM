@@ -227,10 +227,10 @@ func buildExtractionPrompt(processDescription string) string {
 
 	func callQwen(prompt string) (string, error) {
 	requestBody := OllamaRequest{
-		Model:     "qwen3:8b",
+		Model:     "qwen3.5:9b",
 		Prompt:    prompt,
 		Stream:    false,
-		KeepAlive: "10m", // เรียก 2 ครั้งต่อคำขอ เพิ่มเวลาเก็บโมเดลไว้
+		KeepAlive: "10m", 
 		Think:     false,
 		Options: map[string]interface{}{"temperature": 0, "num_ctx": 8192},
 	}
